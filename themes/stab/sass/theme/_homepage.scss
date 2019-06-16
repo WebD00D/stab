@@ -1,0 +1,26 @@
+.homepage {
+  &__hero-slider {
+    .hp-slide {
+      height: 420px;
+      display: flex;
+
+      &__content {
+        width: 50%;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        text-align: center;
+      }
+
+      &__image {
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

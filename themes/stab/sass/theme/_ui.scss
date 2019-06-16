@@ -1,0 +1,106 @@
+// === COLORS === //
+
+$black: #070907;
+$red: #ff3366;
+
+// === GENERAL === //
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  position: relative;
+  &::after {
+    height: 40px;
+    background-color: green;
+  }
+}
+
+.page {
+  box-shadow: -2px -3px 22px rgba(0, 0, 0, 0.08);
+
+  position: relative;
+  background-color: #fff;
+  position: relative;
+  top: 207px;
+  z-index: 1;
+  margin: 0px;
+
+  &__wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+  }
+}
+
+// === BUTTONS === //
+
+.button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  line-height: 1;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &--primary {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 32px;
+    background: $red;
+    color: #fff;
+    border-radius: 50px;
+  }
+}
+
+// === ADVERTISEMENTS === //
+
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--full-width {
+    min-height: 260px;
+    width: 100%;
+    background: #f8f8f8;
+    box-shadow: inset -2px -3px 22px rgba(0, 0, 0, 0.08);
+  }
+
+  &--top {
+    position: fixed;
+    top: 100px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 12px;
+
+    label {
+      margin-top: 12px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+
+      text-align: center;
+      letter-spacing: 1px;
+
+      color: #c0c0c0;
+    }
+  }
+}

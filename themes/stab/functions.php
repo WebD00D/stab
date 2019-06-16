@@ -123,6 +123,7 @@ function stab_scripts() {
 	wp_enqueue_style( 'stab-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'stab-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 	wp_enqueue_script( 'stab-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
